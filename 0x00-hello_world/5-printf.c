@@ -1,13 +1,15 @@
-#include <std.io>
+#include <stdio.h>
 
 /**
- * main :The Start of the prog.
- * Description : The program will print with printf function
+ * main -Entry point
+ *
+ * Description : A C program will print with printf function
+ *
  * Return : Always return 0 (success)
 */
 
 int main(void)
 {
-printf ("with proper grammar, but the outcome is a piece of art,");
+printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
 }
