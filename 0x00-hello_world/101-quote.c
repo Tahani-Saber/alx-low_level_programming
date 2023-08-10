@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - start point of the program
@@ -10,7 +10,7 @@
 
 int main(void)
 {
-char q = 'and that piece of art is useful\" - Dora Korpar, 2015-10-19\n';
-putchar(q);
+char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write (1,quo,58);
 return (1);
 }
