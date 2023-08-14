@@ -6,7 +6,7 @@
  *
  * Description: A c program to print the alphabet in lowercase
  *
- * return: Return 0 as required
+ * Return: return 0 (success)
 */
 
 int main(void)
