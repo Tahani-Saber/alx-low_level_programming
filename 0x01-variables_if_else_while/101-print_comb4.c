@@ -10,22 +10,36 @@
 
 int main(void)
 {
-	int i = 0;
 
-	while (i < 1000)
+	int i, j, k;
+
+	for (i = 48; i < 58; i++)
 	{
-		if (i % 10 != i / 10 % 10 || i % 10 != i / 100 || i / 10 % 10 != i / 100)
+		for (j = i; j < 58; j++)
 		{
-			putchar(i / 100 + '0');
-			putchar(i / 10 % 10 + '0');
-			putchar(i % 10 + '0');
-			if (i < 789)
+			for (k = j; k < 58; k++)
 			{
-				putchar(',');
-				putchar(' ');
+				if (i == j || j == k || i == k)
+				{
+					continue;
+				}
+				putchar(i);
+				putchar(j);
+				putchar(k);
+
+				if (i == 55 && j == 56 && k == 57)
+				{
+					break;
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
+
 			}
 		}
-		i++;
 	}
+	putchar('\n');
 	return (0);
 }
