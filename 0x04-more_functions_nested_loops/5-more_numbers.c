@@ -16,7 +16,7 @@ void more_numbers(void)
 	{
 		for (num = 0; num <= 14; num++)
 		{
-			num = pri_num;
+			pri_num = num;
 			if (num > 9)
 				_putchar(1 + 48);
 				pri_num = num % 10;
