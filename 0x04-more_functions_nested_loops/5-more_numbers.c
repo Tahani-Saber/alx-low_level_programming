@@ -18,8 +18,10 @@ void more_numbers(void)
 		{
 			pri_num = num;
 			if (num > 9)
+			{
 				_putchar(1 + 48);
 				pri_num = num % 10;
+			}
 			_putchar(pri_num + 48);
 		}
 		_putchar('\n');
