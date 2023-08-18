@@ -10,18 +10,18 @@
 
 void print_line(int n)
 {
-	int in_num;
+	int num;
 
-	if (in_num <= 0)
-	{
+	if (num <= 0)
+	
 		_putchar('\n');
-	}
+	
 	else
 	{
-		for (in_num = 1; in_num <= n; in_num++)
-		{
+		for (num = 1; num <= n; num++)
+		
 			_putchar('_');
-		}
+		
 		_putchar('\n');
 	}
 }
