@@ -21,6 +21,8 @@ int main(void)
 		else if (i % 3 == 0 && i % 5 == 0)
 			_putchar("FizzBuzz");
 		else
-			_putchar(i);
+			printf("%d", i);
+		if (i < 100)
+			_putchar(' ');
 	}
 }
