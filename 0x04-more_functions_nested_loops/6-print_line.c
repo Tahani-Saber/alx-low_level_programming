@@ -1,23 +1,20 @@
 #include "main.h"
 
 /**
- * print_line - start of the prog
- *@n: is the parameter of the function
- * Description: A c program to print line
+ * print_line - printing lines
+ * @n: number of times
  *
- * Return: return void
-*/
+ * Return: void
+ */
+
 
 void print_line(int n)
 {
-	int num;
+	int i;
 
-	if (num <= 0)
-		_putchar('\n');
-	else
+	for (i = 0; i < n; i++)
 	{
-		for (num = 1; num <= n; num++)
-			_putchar('_');
-		_putchar('\n');
+		_putchar('_');
 	}
+	_putchar('\n');
 }
