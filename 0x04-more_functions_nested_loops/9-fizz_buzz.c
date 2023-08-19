@@ -5,7 +5,7 @@
  *
  * Description: a program to print text instead of specific numbers
  *
- * Return: return void
+ * Return: return 0
 */
 
 int main(void)
@@ -25,4 +25,6 @@ int main(void)
 		if (i < 100)
 			_putchar(' ');
 	}
+	_putchar('\n');
+	return (0)
 }
