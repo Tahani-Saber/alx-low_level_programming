@@ -7,20 +7,15 @@
  * Return: always 0
  **/
 
-int main()
+int main(void)
 {
-	long long n = 612852475143;
-	int i;
+	unsigned long int i, n = 612852475143;
 
-	for (i = 2; i <= n; i++)
+	for (i = 3; i < 782849; i = i + 2)
 	{
- 		while (n % i == 0)
-		{
- 			n /= i;
-		}
+		while ((n % i == 0) && (n != i))
+			n = n / i;
 	}
-
-	printf("Largest prime factor is %d\n", i);
-
-	return 0;
+	printf("%lu\n", n);
+	return (0);
 }
