@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - main function
+ * print_sign - function
  *
  * Description: prog to check the sign of the number
  *@n: the parameter express the number
@@ -11,17 +11,17 @@
 
 int print_sign(int n)
 {
-	if (n > 0)
+	if (n > '0')
 	{
 		_putchar(43);
 		return (1);
 	}
-	else if (n < 0)
+	else if (n < '0')
 	{
 		_putchar(45);
 		return (-1);
 	}
-	else (n == 0)
+	else (n == '0')
 	{
 		_putchar(48);
 		return (0);
