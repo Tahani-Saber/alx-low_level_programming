@@ -1,17 +1,15 @@
 #include "main.h"
-#define CHAR_BIT 8
 
 /**
- * _abs  -  start of the program
+ * _abs - Computes the absolute value of an integer.
+ * @n: The integer to be computed.
  *
- * Description: This function will return absolute value of n
- * @n: the input number
- *
+ * Return: The absolute value of the integer.
  */
-
-int _abs(int)
+int _abs(int n)
 {
-	int const mask = n >> (sizeof(int) * CHAR_BIT - 1);
-
-	return ((n + mask) ^ mask);
+	if (n >= 0)
+		return (n);
+	else
+		return (-n);
 }
