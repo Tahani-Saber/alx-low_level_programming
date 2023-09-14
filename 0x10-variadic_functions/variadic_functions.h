@@ -1,5 +1,5 @@
-#ifndef VARIADIC_FUNCTIONS_
-#define VARIADIC_FUNCTIONS_
+#ifndef VARIADIC_FUNCTIONS 
+#define VARIADIC_FUNCTIONS 
 
 #include <stdarg.h>
 #include <stdio.h>
