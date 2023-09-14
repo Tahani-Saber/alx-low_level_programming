@@ -1,10 +1,10 @@
-#ifndef VARIADIC_FUNCTIONS.H
-#define VARIADIC_FUNCTIONS.H
+#ifndef VARIADIC_FUNCTIONS_
+#define VARIADIC_FUNCTIONS_
 
 #include <stdarg.h>
 #include <stdio.h>
 
-_putchar(char c);
+int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 
 
