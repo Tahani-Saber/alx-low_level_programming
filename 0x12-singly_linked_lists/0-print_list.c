@@ -4,7 +4,7 @@
  * print_list - function that prints all the elements
  * @h: list-name
  *
- * REturn: nodes count
+ * Return: nodes count
  */
 
 size_t print_list(const list_t *h)
