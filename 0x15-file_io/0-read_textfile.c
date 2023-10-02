@@ -21,9 +21,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	while (letters)
 	{
 		ch = fgetc(ptr);
-		_putchar(ch);
+		putchar(ch);
 		letters++;
 	}
-		_putchar(letters);
+		return (letters);
 	return (0);
 }
