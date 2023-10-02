@@ -12,18 +12,29 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *ptr;
-	char ch;
+	ssize_t o, r, w;
+	char *buffer;
 
-	ptr = fopen(filename, "r");
 	if (filename == NULL)
 		return (0);
-	while (letters)
+
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+		return (0);
+
+	o = open(filename, O_RDONLY);
+	r = read(o, buffer, letters);
+	w = write(STDOUT_FILENO, buffer, r);
+
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
-		ch = fgetc(ptr);
-		_putchar(ch);
-		letters++;
+		free(buffer);
+		return (0);
 	}
-	fclose(ptr);
-	return (0);
+
+	free(buffer);
+	close(o);
+
+	return (w);
+}
 }
